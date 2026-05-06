@@ -17,7 +17,7 @@ export default function About() {
           <div className={styles.imgWrapper}>
             <img
               src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?w=700&q=80"
-              alt="Professional web development team"
+              alt="Professional web development"
               className={styles.img}
             />
             <div className={styles.badge}>
@@ -38,7 +38,7 @@ export default function About() {
           <ul className={styles.list}>
             {points.map((p) => (
               <li key={p} className={styles.listItem}>
-                <CheckCircle size={20} color="#e84c3d" className={styles.check} />
+                <CheckCircle size={18} color="#3b9eff" className={styles.check} />
                 <span>{p}</span>
               </li>
             ))}

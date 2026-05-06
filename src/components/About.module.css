@@ -1,6 +1,6 @@
 .section {
   padding: 90px 0;
-  background: white;
+  background: #f4f7fb;
 }
 
 .container {
@@ -25,22 +25,22 @@
 
 .img {
   width: 100%;
-  height: 500px;
+  height: 480px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.14);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.12);
 }
 
 .badge {
   position: absolute;
   bottom: -20px;
   right: -20px;
-  background: linear-gradient(135deg, #e84c3d, #f97316);
+  background: #0d1b2e;
   color: white;
   padding: 22px 26px;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(232, 76, 61, 0.45);
+  box-shadow: 0 8px 32px rgba(13, 27, 46, 0.35);
 }
 
 .badgeNum {
@@ -54,16 +54,16 @@
   display: block;
   font-size: 12px;
   font-weight: 500;
-  opacity: 0.9;
+  opacity: 0.65;
   margin-top: 5px;
   line-height: 1.3;
 }
 
 .tag {
   display: inline-block;
-  background: rgba(232, 76, 61, 0.1);
-  border: 1px solid rgba(232, 76, 61, 0.25);
-  color: #e84c3d;
+  background: rgba(59, 158, 255, 0.1);
+  border: 1px solid rgba(59, 158, 255, 0.25);
+  color: #3b9eff;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -74,7 +74,7 @@
 }
 
 .title {
-  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.4rem);
   font-weight: 800;
   color: #0d1b2e;
   margin-bottom: 20px;
@@ -114,21 +114,21 @@
 .cta {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, #0d1b2e, #1a3a5c);
+  background: #0d1b2e;
   color: white;
   font-size: 15px;
   font-weight: 600;
   padding: 15px 34px;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 6px 24px rgba(13, 27, 46, 0.28);
   transition: all 0.3s ease;
   letter-spacing: 0.3px;
 }
 
 .cta:hover {
+  background: #3b9eff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 36px rgba(13, 27, 46, 0.38);
+  box-shadow: 0 10px 32px rgba(59, 158, 255, 0.35);
 }
 
 @media (max-width: 900px) {

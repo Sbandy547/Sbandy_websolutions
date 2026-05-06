@@ -1,0 +1,260 @@
+.section {
+  padding: 90px 0;
+  background: #f4f7fb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(10, 42, 110, 0.08);
+  border: 1px solid rgba(10, 42, 110, 0.15);
+  color: #0a2a6e;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 100px;
+  margin-bottom: 18px;
+}
+
+.title {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #0d1b2e;
+  margin-bottom: 14px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 56px;
+  align-items: start;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 36px 28px 32px;
+  border: 1.5px solid #e8edf4;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.09);
+}
+
+.featured {
+  background: #0d1b2e;
+  border-color: #0d1b2e;
+  transform: scale(1.04);
+}
+
+.featured:hover {
+  transform: scale(1.04) translateY(-4px);
+}
+
+.popularBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3b9eff;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.cardHeader {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.featured .cardHeader {
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.planName {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3b9eff;
+  margin-bottom: 10px;
+}
+
+.featured .planName {
+  color: #3b9eff;
+}
+
+.price {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #0d1b2e;
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -1px;
+}
+
+.featured .price {
+  color: white;
+}
+
+.planTag {
+  font-size: 13px;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+.featured .planTag {
+  color: rgba(255,255,255,0.55);
+}
+
+.features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.featured .feature {
+  color: rgba(255,255,255,0.82);
+}
+
+.check {
+  color: #3b9eff;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.cta {
+  display: block;
+  text-align: center;
+  background: #f4f7fb;
+  color: #0d1b2e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1.5px solid #e8edf4;
+  transition: all 0.2s ease;
+  letter-spacing: 0.3px;
+}
+
+.cta:hover {
+  background: #0d1b2e;
+  color: white;
+  border-color: #0d1b2e;
+}
+
+.ctaFeatured {
+  background: #3b9eff;
+  color: white;
+  border-color: #3b9eff;
+}
+
+.ctaFeatured:hover {
+  background: #2586e8;
+  border-color: #2586e8;
+  color: white;
+}
+
+.extras {
+  background: white;
+  border-radius: 20px;
+  padding: 40px 36px;
+  border: 1.5px solid #e8edf4;
+}
+
+.extrasTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0d1b2e;
+  margin-bottom: 24px;
+  letter-spacing: -0.3px;
+}
+
+.extrasGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0;
+}
+
+.extraItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+  gap: 16px;
+}
+
+.extraItem:last-child {
+  border-bottom: none;
+}
+
+.extraName {
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.extraPrice {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3b9eff;
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto 56px;
+  }
+
+  .featured {
+    transform: none;
+  }
+
+  .featured:hover {
+    transform: translateY(-4px);
+  }
+}

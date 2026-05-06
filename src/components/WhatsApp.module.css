@@ -1,0 +1,52 @@
+.btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.45);
+  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 10px 36px rgba(37, 211, 102, 0.55);
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .btn {
+    bottom: 20px;
+    right: 20px;
+    padding: 13px 16px;
+    font-size: 13px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .btn {
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+}

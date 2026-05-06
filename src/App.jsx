@@ -4,9 +4,10 @@ import Stats from './components/Stats'
 import Services from './components/Services'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
-import Testimonials from './components/Testimonials'
+import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WhatsApp from './components/WhatsApp'
 
 export default function App() {
   return (
@@ -17,9 +18,10 @@ export default function App() {
       <Services />
       <About />
       <Portfolio />
-      <Testimonials />
+      <Pricing />
       <Contact />
       <Footer />
+      <WhatsApp />
     </>
   )
 }

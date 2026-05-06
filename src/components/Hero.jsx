@@ -1,11 +1,11 @@
 import styles from './Hero.module.css'
 
 const services = [
-  'Custom Website Design & Development',
-  'Domain Hosting & Professional Email Setup',
-  'Logo & Graphic Design',
+  'Website Designs & Development',
+  'Hosting & Email Setup',
+  'Graphic Design',
   'Social Media Marketing',
-  'SEO & Digital Growth',
+  "Marketing Video's",
 ]
 
 export default function Hero() {
@@ -13,28 +13,20 @@ export default function Hero() {
     <section className={styles.hero} id="home">
       <div className={styles.overlay} />
       <div className={styles.content}>
-        <div className={styles.badge}>South African Web Professionals</div>
         <h1 className={styles.heading}>
-          We Build Websites<br />
-          That <span className={styles.accent}>Get Results</span>
+          Web<br />Development<br />Solutions
         </h1>
-        <p className={styles.subheading}>
-          From startups to established businesses — we design, build, and launch professional websites tailored to your brand and goals.
-        </p>
         <ul className={styles.serviceList}>
           {services.map((s) => (
-            <li key={s} className={styles.serviceItem}>
-              <span className={styles.dot} />
-              {s}
-            </li>
+            <li key={s} className={styles.serviceItem}>{s}</li>
           ))}
         </ul>
         <div className={styles.actions}>
-          <a href="#portfolio" className={styles.btnPrimary}>
-            View Our Work
+          <a href="mailto:info@sbandywebservices.co.za" className={styles.btnOutline}>
+            SEND US A MAIL
           </a>
-          <a href="#contact" className={styles.btnSecondary}>
-            Get a Free Quote
+          <a href="#contact" className={styles.btnOutline}>
+            CONTACT NOW
           </a>
         </div>
       </div>
