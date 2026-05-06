@@ -1,26 +1,23 @@
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone } from 'lucide-react'
 import styles from './Footer.module.css'
+import logo from '/logo-transparent.png'
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.wave}>
         <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#f8fafc" />
+          <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#0d1b2e" />
         </svg>
       </div>
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.brand}>
-            <div className={styles.logo}>
-              <div className={styles.logoIcon}><span>S</span></div>
-              <div>
-                <span className={styles.logoBrand}>SBANDY</span>
-                <span className={styles.logoSub}>WEB SERVICES</span>
-              </div>
+            <div className={styles.logoWrap}>
+              <img src={logo} alt="Sbandy Web Services" className={styles.logoImg} />
             </div>
             <p className={styles.tagline}>
-              Professional web solutions that help your business grow online. From design to development, we've got you covered.
+              We build fast, professional websites and digital solutions that help South African businesses grow online. Quality work, real results.
             </p>
             <div className={styles.socials}>
               <a href="#" className={styles.social} aria-label="Facebook"><Facebook size={18} /></a>
@@ -46,7 +43,6 @@ export default function Footer() {
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About Us</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -54,9 +50,9 @@ export default function Footer() {
             <h4 className={styles.colTitle}>Contact</h4>
             <ul className={styles.colList}>
               <li>
-                <a href="mailto:info@sbandywebservices.com">
+                <a href="mailto:info@sbandywebservices.co.za">
                   <Mail size={14} style={{ marginRight: 6 }} />
-                  info@sbandywebservices.com
+                  info@sbandywebservices.co.za
                 </a>
               </li>
               <li>
@@ -66,11 +62,14 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+            <div className={styles.badge}>
+              <span>🇿🇦 Based in South Africa</span>
+            </div>
           </div>
         </div>
         <div className={styles.bottom}>
           <p>&copy; {new Date().getFullYear()} Sbandy Web Services. All rights reserved.</p>
-          <p>Designed & Developed by Sbandy Web Services</p>
+          <p>Designed & Built by Sbandy Web Services</p>
         </div>
       </div>
     </footer>

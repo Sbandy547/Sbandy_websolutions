@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import styles from './Navbar.module.css'
+import logo from '/logo-transparent.png'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -24,13 +25,7 @@ export default function Navbar() {
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <a href="#home" className={styles.logo}>
-          <div className={styles.logoIcon}>
-            <span>S</span>
-          </div>
-          <div className={styles.logoText}>
-            <span className={styles.logoBrand}>SBANDY</span>
-            <span className={styles.logoSub}>WEB SERVICES</span>
-          </div>
+          <img src={logo} alt="Sbandy Web Services" className={styles.logoImg} />
         </a>
 
         <ul className={`${styles.links} ${menuOpen ? styles.open : ''}`}>

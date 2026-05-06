@@ -5,16 +5,17 @@
 }
 
 :root {
-  --primary: #0a2a6e;
-  --primary-dark: #061a4a;
+  --primary: #0d1b2e;
+  --primary-mid: #0a2a6e;
   --accent: #e84c3d;
   --accent-light: #ff6b5b;
   --orange: #f97316;
-  --text-dark: #1a1a2e;
+  --text-dark: #0d1b2e;
+  --text-mid: #2d3748;
   --text-light: #6b7280;
   --white: #ffffff;
-  --bg-light: #f8fafc;
-  --border: #e2e8f0;
+  --bg-light: #f4f7fb;
+  --border: #e8edf4;
 }
 
 html {

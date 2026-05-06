@@ -1,8 +1,8 @@
 import styles from './Stats.module.css'
 
 const stats = [
-  { num: '150+', label: 'Websites Built' },
-  { num: '98%', label: 'Client Satisfaction' },
+  { num: '5+', label: 'Live Client Websites' },
+  { num: '100%', label: 'Client Satisfaction' },
   { num: '5+', label: 'Years Experience' },
   { num: '24/7', label: 'Support Available' },
 ]
